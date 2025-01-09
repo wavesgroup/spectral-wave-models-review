@@ -10,7 +10,7 @@
 * Computationally prohibitive: resolving the shortest ($\mathcal{O}(0.1\ m)$ and
 the longest ($\mathcal{O}(100\ m)$ waves spans 3 orders of magnitude
 * Basin scale ($\mathcal{O}(100\ km)$ and
-* Time scale ($\mathcal{O}(1\ day)$
+* Time scale ($\mathcal{O}(1\ day)$)
 </section>
 
 
@@ -50,7 +50,10 @@ $$
 \sigma^2 = gk\tanh(kh)
 $$
 
-This relationship determines how waves of different wavelengths travel at different speeds.
+Determines how waves of different wavelengths travel at different speeds.
+
+Optionally, may include surface tension effects for the gravity-capillary wave regime.
+
 </section>
 
 
@@ -68,7 +71,7 @@ $$
 $$
 
 * $\frac{\partial}{\partial \mathbf{x}} \left(\dot{\mathbf{x}} \mathcal{N}\right)$: propagation
-* $\frac{\partial}{\partial k} \left(\dot{k} \mathcal{N}\right)$: TODO
+* $\frac{\partial}{\partial k} \left(\dot{k} \mathcal{N}\right)$: wavenumber modulation by currents
 * $\frac{\partial}{\partial \theta} \left(\dot{\theta} \mathcal{N}\right)$: refraction
 
 </section>

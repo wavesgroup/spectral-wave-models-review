@@ -5,6 +5,11 @@
 
 <section>
 
+<img class="stretch" src="assets/ocean-wave-surface.jpg">
+</section>
+
+<section>
+
 ## Global wave forecasting: significant height
 
 ![](assets/era5_Hs_2024-09-01.png)
