@@ -114,3 +114,13 @@ limitations in the parameterization of the nonlinear energy transfer, $S_{nl}$."
 * 1990s: WAVEWATCH III and SWAN
 * 2012: UMWM and going back to simpler $S_{nl}$
 </section>
+
+
+<section>
+
+## What are spectral models useful for in 2025?
+
+1. **Wave forecasting**: Navigation, human safety, coastal and offshore engineering, battlespace environment, recreation and tourism (e.g. surf), etc.
+2. **Wave research**: Better understanding of wave physics and related processes
+3. **Surface boundary conditions to circulation models**: Earth system coupling
+</section>

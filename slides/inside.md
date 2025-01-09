@@ -70,9 +70,9 @@ $$
 \frac{\partial}{\partial \theta} \left(\dot{\theta} \mathcal{N}\right) = 0
 $$
 
-* $\frac{\partial}{\partial \mathbf{x}} \left(\dot{\mathbf{x}} \mathcal{N}\right)$: propagation
+* $\frac{\partial}{\partial \mathbf{x}} \left(\dot{\mathbf{x}} \mathcal{N}\right)$: propagation ($\dot{\mathbf{x}} \equiv C_g$)
 * $\frac{\partial}{\partial k} \left(\dot{k} \mathcal{N}\right)$: wavenumber modulation by currents
-* $\frac{\partial}{\partial \theta} \left(\dot{\theta} \mathcal{N}\right)$: refraction
+* $\frac{\partial}{\partial \theta} \left(\dot{\theta} \mathcal{N}\right)$: refraction by depth and currents
 
 </section>
 
@@ -92,7 +92,7 @@ $$
 
 ## The good
 
-* One prognostic equation
+* One prognostic equation (wave action balance)
 * Largely wind-driven
 * Linear equation (no chaos)
 </section>
@@ -101,9 +101,8 @@ $$
 
 ## The bad
 
-* Highly multidimensional
-* Computationally dense
-
+* **Highly multidimensional**: Every grid point has $\mathcal{O}(10^3)$ degrees of freedom
+* **Computationally dense**: All source terms evaluated everywhere, for all directions and frequencies
 </section>
 
 <section>
@@ -113,5 +112,4 @@ $$
 * Sources and sinks
 * We don't fully understand how waves grow
 * We don't fully understand how waves dissipate
-* We don't fully understand how waves interact with each other
 </section>
