@@ -1,6 +1,6 @@
 <section>
 
-## Frontier and emerging applications
+## Frontier challenges and applications
 </section>
 
 
@@ -8,9 +8,30 @@
 
 ## Accounting for waves and current shear in wind stress calculations
 
-* Ortiz-Suslow et al. (2025), in review at Boundary-Layer Meteorology
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; padding-right: 10px;">
+        <img src="assets/sctt_blm_fig02.png" alt="Wave-current interaction diagram">
+    </div>
+    <div style="flex: 2; padding-left: 10px;">
+        <h4>Relative change in stress when accounting for waves and sheared current</h4>
+        <img src="assets/sctt_blm_fig09.png" alt="Wave-current stress results">
+    </div>
+</div>
+
+Ortiz-Suslow et al. (2025), in review at Boundary-Layer Meteorology
 </section>
 
+
+<section>
+
+## Running on emerging architectures (GPUs)
+</section>
+
+
+<section>
+
+## Should we revisit hydrodynamic modulation of short waves by longer waves in spectral wave models?
+</section>
 
 
 <section>
@@ -54,4 +75,46 @@
         <img src="assets/detelich_ligeia_Hs.png" style="width: 100%;">
     </div>
 </div>
+</section>
+
+
+<section style="display: flex; flex-direction: column;">
+
+<div style="flex: 8">
+
+## neural-fortran: A parallel deep learning framework for Fortran applications
+
+* Created to enable pure Fortran ML in Fortran applications
+* Training and inference of arbitrarily deep dense and convolutional networks
+* Optimizers: SGD, RMSProp, Adagrad, Adam, AdamW
+* Data parallelism with Fortran 2018 collectives
+* Used in over a dozen published studies from chemistry and combustion to weather and climate
+* https://github.com/modern-fortran/neural-fortran
+
+<div class="reference"><a href="https://doi.org/10.1145/3323057.3323059">Curcic (2019)</a></div>
+</div>
+
+<div style="flex: 3">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+    <img height=90 style="margin: auto 0;" src="assets/nasa.png"></img>
+    <img height=40 style="margin: auto 0;" src="assets/gsoc.png"></img>
+    <img height=40 style="margin: auto 0;" src="assets/wur.svg"></img>
+  </div>
+</div>
+</section>
+
+
+<section>
+
+## Single-core CPU performance in training
+
+![benchmark_dense_mnist](assets/benchmark_dense_mnist.png)
+
+-> Neural-Fortran is 2x ahead of a leading ML framework for training on CPUs.
+</section>
+
+
+<section>
+
+# Picles
 </section>
