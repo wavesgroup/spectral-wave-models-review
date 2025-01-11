@@ -22,11 +22,6 @@ Ortiz-Suslow et al. (2025), in review at Boundary-Layer Meteorology
 </section>
 
 
-<section>
-
-## Running on emerging architectures (GPUs)
-</section>
-
 
 <section>
 
@@ -75,6 +70,40 @@ Ortiz-Suslow et al. (2025), in review at Boundary-Layer Meteorology
         <img src="assets/detelich_ligeia_Hs.png" style="width: 100%;">
     </div>
 </div>
+</section>
+
+
+<section>
+
+## Running on emerging architectures (GPUs)
+
+* Most spectral wave models are written in Fortran, mainly due to
+  - Fortran's ease of use for scientists
+  - Great support for high-performance computing.
+* Emerging accelerator architectures like GPUs are rapidly evolving,
+initially driven by the video game industry and more recently by AI.
+* However, Fortran compiler vendors have not caught up with the latest GPU
+hardware.
+* This is slowly changing by the recent advances
+* An alternative approach: emulating the bulk of the wave model code with
+essentially a large matrix multiplication.
+</section>
+
+
+<section>
+
+## Why spectral wave models are a great fit for machine learning
+
+* Source terms are computationally dense and expensive
+  ($S_{ds}$ and $S_{nl}$ are in most cases non-local in spectral space)
+* Can be replaced with neural networks:
+    * Dense matrix multiplication (matmul) operations
+    * Highly optimized on modern hardware
+    * Potential for massive speedup
+* Language barrier challenge:
+    * Wave models written in Fortran
+    * ML frameworks primarily in Python
+    * neural-fortran bridges this gap
 </section>
 
 

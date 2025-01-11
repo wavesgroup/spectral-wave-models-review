@@ -19,8 +19,8 @@
 
 ## Design principles
 
-* Simple and small
-* Opinionated source functions
+* Simple and small (< 5K lines of code)
+* One set of source functions tailored to strong wind conditions
 * Expose all wind-wave and wave-current vector fluxes
 * Easy coupling with other models via ESMF
 </section>
@@ -28,7 +28,28 @@
 
 <section>
 
-## UMWM physics
+## UMWM physics, in a nutshell
+
+$$
+S_{in}(k,\theta) =
+\mathcal{A} \frac{\rho_a}{\rho_w}
+\left(\frac{U_{\lambda/2}}{C_p} - 1\right)
+\left|\frac{U_{\lambda/2}}{C_p} - 1\right|
+\omega F(k,\theta)
+$$
+
+
+$$
+S_{ds}(k, \theta) =
+\mathcal{B} [1 + \mathcal{C} \chi ^2(k,\theta)]^2 [F(k,\theta) k^4]^\frac{5}{2} \omega F(k,\theta)
+$$
+
+$$
+S_{nl}(k,\theta) = \mathcal{D} S_{ds}(k,\theta) \frac{\partial F}{\partial k}
+$$
+
+where $\mathcal{A}$, $\mathcal{B}$, $\mathcal{C}$, $\mathcal{D}$ are tunable coefficients.
+
 </section>
 
 

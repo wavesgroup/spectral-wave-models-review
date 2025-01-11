@@ -3,16 +3,6 @@
 ## How do spectral wave models work?
 </section>
 
-<section>
-
-## Problem: Why can't we just solve the RANS equations for waves?
-
-* Computationally prohibitive: resolving the shortest ($\mathcal{O}(0.1\ m)$ and
-the longest ($\mathcal{O}(100\ m)$ waves spans 3 orders of magnitude
-* Basin scale ($\mathcal{O}(100\ km)$ and
-* Time scale ($\mathcal{O}(1\ day)$)
-</section>
-
 
 <section>
 
@@ -28,7 +18,7 @@ the longest ($\mathcal{O}(100\ m)$ waves spans 3 orders of magnitude
 
 ## Governing equations
 
-Conservation of wave action, $\mathcal{N} \equiv \mathcal{E} / \sigma$:
+Conservation of wave action, $\mathcal{N} \equiv \mathcal{E} / \sigma$ (Whitham, 1965):
 
 $$
 \frac{\partial \mathcal{N}}{\partial t} + \nabla\left(C_g \mathcal{N}\right) = 0
@@ -36,6 +26,7 @@ $$
 
 $\mathcal{N}$ is (mostly) conserved for small-amplitude waves on slowly-varying
 currents (Bretherton & Garrett, 1968)
+
 Zakharov (1968) also independently found that wave energy is a Hamiltonian.
 
 </section>
@@ -59,9 +50,9 @@ Optionally, may include surface tension effects for the gravity-capillary wave r
 
 <section>
 
-## Wave action balance in Fourier space
+## Wave action balance in spectral space
 
-If wave action is expressed in Fourier space as $\mathcal{N}(\mathbf{x}, k, \theta)$, then
+If wave action is expressed as $\mathcal{N}(\mathbf{x}, k, \theta)$, then
 
 $$
 \frac{\partial \mathcal{N}}{\partial t} +
@@ -78,7 +69,21 @@ $$
 
 <section>
 
-## Analogy to RANS
+## Waves not only propagate but also grow, dissipate, and evolve in the wavenumber space
+
+$$
+\frac{\partial \mathcal{N}}{\partial t} +
+\frac{\partial}{\partial \mathbf{x}} \left(\dot{\mathbf{x}} \mathcal{N}\right) +
+\frac{\partial}{\partial k} \left(\dot{k} \mathcal{N}\right) +
+\frac{\partial}{\partial \theta} \left(\dot{\theta} \mathcal{N}\right)
+= S_{tot}
+$$
+
+where $S_{tot}$ represents all sources and sinks of wave action:
+
+$$
+S_{tot} = S_{in} + S_{ds} + S_{nl} + S_{ice} + ...
+$$
 
 </section>
 
@@ -92,9 +97,12 @@ $$
 
 ## The good
 
+* Small-amplitude theory works surprisingly well
 * One prognostic equation (wave action balance)
+* Non-chaotic, unlike weather and ocean circulation
+* Dynamics (propagation and refraction) are known and cheap
+* Nonlinear transfer is known; although expensive when exact, good approximations exist
 * Largely wind-driven
-* Linear equation (no chaos)
 </section>
 
 <section>
@@ -102,14 +110,15 @@ $$
 ## The bad
 
 * **Highly multidimensional**: Every grid point has $\mathcal{O}(10^3)$ degrees of freedom
-* **Computationally dense**: All source terms evaluated everywhere, for all directions and frequencies
+* **Computationally dense**: All source terms evaluated for all frequencies and directions
 </section>
 
 <section>
 
 ## The ugly
 
-* Sources and sinks
-* We don't fully understand how waves grow
-* We don't fully understand how waves dissipate
+* Source functions are many, complex, and not well known
+* We don't yet fully understand how waves grow or dissipate
+* Expressing growth and dissipation in a phase-averaged, spectral form will
+inevitably require a parameterization
 </section>

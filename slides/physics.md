@@ -1,6 +1,6 @@
 <section>
 
-## Wave model source functions
+## Spectral wave model physics (a.k.a source functions)
 </section>
 
 
@@ -8,8 +8,8 @@
 
 ## Wave growth by wind ($S_{in}$)
 
-* Several competing theories/interpretations: Jeffreys, Phillips, Miles, Belcher, etc.
-* All share a common fundamental idea that waves grow by opposing pressure anomalies
+* Several partly competing theories and interpretations: Jeffreys (1924), Phillips (1957), Miles (1957), Belcher (1990), etc.
+* All share the idea that waves grow by opposing pressure anomalies
 on the two sides of a wave crest.
 </section>
 
