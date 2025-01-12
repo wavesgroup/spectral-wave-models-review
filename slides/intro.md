@@ -21,7 +21,7 @@ $\rightarrow$ Many waves of many scales in many directions!
 * Computationally prohibitive: resolving the shortest ($\mathcal{O}(0.1\ m))$ and
 the longest ($\mathcal{O}(100\ m))$ gravity waves spans 3 orders of magnitude
 * Basin scales of interest may span $\mathcal{O}(10^2-10^4\ km)$
-* Time scales of interest ($\mathcal{O}(days)$)
+* Time scales of interest span $\mathcal{O}(days)$
 </section>
 
 

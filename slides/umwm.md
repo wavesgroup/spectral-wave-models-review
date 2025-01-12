@@ -87,7 +87,7 @@ where $\mathcal{A}$, $\mathcal{B}$, $\mathcal{C}$, $\mathcal{D}$ are tunable coe
 15 years later, new requirements emerge:
 
 * Portable to GPUs
-* Easy to integrate with ML training flows
+* Easy to integrate with machine learning training flows
 * Allow constructing a hierarchy of wave models of various complexity
 * Generalizable to other planets
 </section>
