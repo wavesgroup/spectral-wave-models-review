@@ -18,14 +18,7 @@
     </div>
 </div>
 
-Ortiz-Suslow et al. (2025), in review at Boundary-Layer Meteorology
-</section>
-
-
-
-<section>
-
-## Should we revisit hydrodynamic modulation of short waves by longer waves in spectral wave models?
+<div class="reference">Ortiz-Suslow et al. (2025), in review at Boundary-Layer Meteorology</div>
 </section>
 
 
@@ -82,11 +75,9 @@ Ortiz-Suslow et al. (2025), in review at Boundary-Layer Meteorology
   - Great support for high-performance computing.
 * Emerging accelerator architectures like GPUs are rapidly evolving,
 initially driven by the video game industry and more recently by AI.
-* However, Fortran compiler vendors have not caught up with the latest GPU
-hardware.
-* This is slowly changing by the recent advances
-* An alternative approach: emulating the bulk of the wave model code with
-essentially a large matrix multiplication.
+* Fortran compiler vendors (NVIDIA, AMD, Intel) are slowly catching up with their
+compilers generating code for GPUs.
+* Software design of wave models needs to adapt to the new hardware.
 </section>
 
 
@@ -96,14 +87,8 @@ essentially a large matrix multiplication.
 
 * Source terms are computationally dense and expensive
   ($S_{ds}$ and $S_{nl}$ are in most cases non-local in spectral space)
-* Can be replaced with neural networks:
-    * Dense matrix multiplication (matmul) operations
-    * Highly optimized on modern hardware
-    * Potential for massive speedup
-* Language barrier challenge:
-    * Wave models written in Fortran
-    * ML frameworks primarily in Python
-    * neural-fortran bridges this gap
+* Can be emulated with neural networks (everything is a `matmul`!)
+* `matmul` is already universally portable on GPUs, so manual porting may not be needed.
 </section>
 
 
@@ -137,13 +122,7 @@ essentially a large matrix multiplication.
 
 ## Single-core CPU performance in training
 
-![benchmark_dense_mnist](assets/benchmark_dense_mnist.png)
+<img src="assets/benchmark_dense_mnist.png" width="80%"></img>
 
--> Neural-Fortran is 2x ahead of a leading ML framework for training on CPUs.
-</section>
-
-
-<section>
-
-# Picles
+$\rightarrow$ neural-Fortran is 2x ahead of a leading ML framework on CPUs.
 </section>

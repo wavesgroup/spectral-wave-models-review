@@ -15,11 +15,11 @@ $\rightarrow$ Many waves of many scales in many directions!
 
 <section>
 
-## Why not just solve the RANS equations for waves?
+## Why not solve the RANS equations for waves?
 
-* Models exist (e.g. shallow water equations, Boussinesq, etc.)
-* Computationally prohibitive: resolving the shortest ($\mathcal{O}(0.1\ m)$ and
-the longest ($\mathcal{O}(100\ m)$ waves spans 3 orders of magnitude
+* Models exist, e.g. shallow water equations, Boussinesq, etc.
+* Computationally prohibitive: resolving the shortest ($\mathcal{O}(0.1\ m))$ and
+the longest ($\mathcal{O}(100\ m))$ gravity waves spans 3 orders of magnitude
 * Basin scales of interest may span $\mathcal{O}(10^2-10^4\ km)$
 * Time scales of interest ($\mathcal{O}(days)$)
 </section>
@@ -81,8 +81,6 @@ rather than the surface elevation itself
 ### Integrated wave quantities from a spectral wave model (ecWAM)
 
 ![](assets/era5_Hs_2024-09-01.png)
-
-TODO make this an animation
 </section>
 
 <section>
@@ -90,6 +88,4 @@ TODO make this an animation
 ### Integrated wave quantities from a spectral wave model (ecWAM)
 
 ![](assets/era5_Tp_2024-09-01.png)
-
-TODO make this an animation
 </section>

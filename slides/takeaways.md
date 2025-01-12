@@ -1,5 +1,17 @@
 <section>
 
+## Takeaways
+
+1. Spectral wave models are an essential tool for wave research and forecasting
+2. A success story of theoreticians, experimentalists, and numerical modelers working together
+3. $S_{in}$ and $S_{ds}$ leave room for improvement and maintain the need for more and better measurements
+4. Future innovation focused on Earth system coupling, machine learning emulation, and better software design
+</section>
+
+
+
+<section>
+
 ## Modern Fortran: Building Efficient Parallel Applications
 <div style="display: flex; flex-direction: row;">
 
@@ -23,5 +35,12 @@
 </div>
 
 </div>
+</section>
 
+
+<section>
+
+# Thank you!
+
+<a href="mailto:mcurcic@miami.edu">mcurcic@miami.edu</a>
 </section>

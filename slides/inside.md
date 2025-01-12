@@ -10,6 +10,7 @@
 
 * Small-amplitude waves over slowly-varying currents and bathymetry
 * Solve for the wave energy probability distribution, not for instantaneous elevation
+* Discretize the spectrum in a number of frequency and direction bins
 </section>
 
 
@@ -26,9 +27,6 @@ $$
 
 $\mathcal{N}$ is (mostly) conserved for small-amplitude waves on slowly-varying
 currents (Bretherton & Garrett, 1968)
-
-Zakharov (1968) also independently found that wave energy is a Hamiltonian.
-
 </section>
 
 <section>
@@ -119,6 +117,6 @@ $$
 
 * Source functions are many, complex, and not well known
 * We don't yet fully understand how waves grow or dissipate
-* Expressing growth and dissipation in a phase-averaged, spectral form will
-inevitably require a parameterization
+* Expressing growth and dissipation in a phase-averaged, spectral form
+requires a parameterization, whether theoretical or empirical
 </section>

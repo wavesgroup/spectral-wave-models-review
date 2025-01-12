@@ -24,7 +24,8 @@ _January 13, 2025_
 ## About me
 
 * PhD from U. Miami in 2015 with Shuyi Chen on atmosphere-wave-ocean coupling
-* Postdoc and research in the U. Miami SUSTAIN laboratory with Brian Haus on
+* Postdoc and research staff in the U. Miami SUSTAIN laboratory with Brian Haus on
   waves and stress in hurricane winds
 * Assistant Professor at U. Miami since 2024
+* Maintainer of the University of Miami Wave Model (UMWM)
 </section>
