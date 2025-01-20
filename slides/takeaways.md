@@ -42,5 +42,18 @@
 
 # Thank you!
 
+<div style="display: flex; flex-direction: row; justify-content: space-around; margin-bottom: 30px;">
+  <div style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <img height="200" src="assets/clasi_logo.png"></img>
+  </div>
+  <div style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <img height="300" src="assets/sascwatch_logo.png"></img>
+  </div>
+  <div style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center;">
+    <img height="150" src="assets/onr_logo.png"></img>
+  </div>
+</div>
+
+
 <a href="mailto:mcurcic@miami.edu">mcurcic@miami.edu</a>
 </section>
