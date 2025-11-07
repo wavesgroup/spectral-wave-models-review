@@ -33,9 +33,9 @@
             <li>Generalize the code to run with arbitrary $g$, fluid densities and viscosities and surface tension</li>
             <li>Motivated by the recent discovery of waves on Titan's methane lakes</li>
             <li>
-              Led by <a href="https://ugschneck.com">Una Schneck</a> (MIT, Planetary Sciences),
+              Led by <a href="https://ugschneck.com">Una Schneck</a> w/ Taylor Perron (MIT, Planetary Sciences),
               and <a href="https://astro.cornell.edu/charlene-charlie-detelich">Charlie Detelich</a>
-              and <a href="https://astro.cornell.edu/alexander-hayes">Alex Hayes</a> (Cornell U., Astronomy)</li>
+              w/ Alex Hayes (Cornell U., Astronomy)</li>
         </ul>
     </div>
     <div style="flex: 1;">
@@ -47,6 +47,7 @@
 </section>
 
 
+<!--
 <section>
 
 ### Wave seasonality on Titan's methane lakes using UMWM
@@ -64,7 +65,7 @@
     </div>
 </div>
 </section>
-
+-->
 
 <section>
 

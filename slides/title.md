@@ -1,6 +1,6 @@
 <section>
 
-## Everything you wanted to know about spectral wave models but were afraid to ask
+## A tutorial on spectral ocean wave modeling
 
 _Milan Curcic_
 
@@ -13,9 +13,9 @@ _University of Miami_
 
 </br>
 
-_ASI-2025, University of Melbourne_
+_Titan Northeast 2025, Yale University_
 
-_January 13, 2025_
+_November 7, 2025_
 </section>
 
 
@@ -23,9 +23,17 @@ _January 13, 2025_
 
 ## About me
 
-* PhD from U. Miami in 2015 with Shuyi Chen on atmosphere-wave-ocean coupling
-* Postdoc and research staff in the U. Miami SUSTAIN laboratory with Brian Haus on
-  waves and stress in hurricane winds
-* Assistant Professor at U. Miami since 2024
-* Maintainer of the University of Miami Wave Model (UMWM)
+* 2009-2015: PhD from U. Miami on atmosphere-wave-ocean coupling
+* 2018-2023: Research staff in the U. Miami SUSTAIN laboratory on
+  measuring extreme wind and waves
+* 2024-: Assistant Professor at U. Miami
+* 2012-: Maintainer of the University of Miami Wave Model (UMWM)
+</section>
+
+
+<section>
+
+## Remembering Mark Donelan (1942-2018)
+
+<img data-src="assets/donelan.jpeg" alt="Mark Donelan" />
 </section>

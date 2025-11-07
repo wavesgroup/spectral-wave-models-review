@@ -1,5 +1,67 @@
 <section>
 
+## Intro to linear wave theory
+### (Airy, 1845; Stokes 1847)
+
+* Incompressible, irrotational and inviscid flow:
+
+$$
+\nabla \cdot \mathbf{u} = \nabla^2 \phi = 0
+$$
+
+* Apply boundary conditions:
+  - Lateral (periodic)
+  - Bottom kinematic (no slip)
+  - Free surface dynamic (Bernoulli) and kinematic
+
+</section>
+
+
+<section>
+
+## Linear wave theory solution
+
+Surface elevation and velocity potential
+$$
+\eta = a \cos(kx - \omega t)
+$$
+
+$$
+\phi = \frac{a g}{\omega} e^{kz} \sin(kx - \omega t)
+$$
+
+<img src="assets/fig_wave_potential.png" />
+</section>
+
+
+<section>
+
+## Linear wave theory solution (cont.)
+
+<img src="assets/fig_wave_velocities.png" />
+</section>
+
+
+<section>
+
+## Waves induce net material transport
+### (Stokes drift)
+
+<video
+  width=600
+  data-autoplay
+  loop
+  src="assets/stokes_drift.mp4"
+  type="video/mp4">
+</video>
+
+<div class="reference">Animation by Nick Pizzo (URI)</div>
+
+</section>
+
+
+<section>
+
 ## Why a spectral approach to wave modeling?
 </section>
 
@@ -18,9 +80,9 @@ $\rightarrow$ Many waves of many scales in many directions!
 ## Why not solve the RANS equations for waves?
 
 * Models exist, e.g. shallow water equations, Boussinesq, etc.
-* Computationally prohibitive: resolving the shortest ($\mathcal{O}(0.1\ m))$ and
-the longest ($\mathcal{O}(100\ m))$ gravity waves spans 3 orders of magnitude
-* Basin scales of interest may span $\mathcal{O}(10^2-10^4\ km)$
+* Computationally prohibitive: resolving the shortest ($\mathcal{O}(cm))$ and
+the longest ($\mathcal{O}(100\ m))$ gravity waves spans 5 orders of magnitude
+* Basin scales of interest may span $\mathcal{O}(10-10^4\ km)$
 * Time scales of interest span $\mathcal{O}(days)$
 </section>
 
@@ -88,4 +150,15 @@ rather than the surface elevation itself
 ### Integrated wave quantities from a spectral wave model (ecWAM)
 
 ![](assets/era5_Tp_2024-09-01.png)
+</section>
+
+
+<section>
+
+## What are spectral models useful for?
+
+1. **Wave forecasting**: Navigation, human safety, coastal and offshore engineering, battlespace environment, recreation and tourism (e.g. surf), etc.
+2. **Wave research**: Better understanding of wave physics and related processes
+3. **Remote sensing**: Interpretation of remote sensing products (e.g. radar returns)
+4. **Surface boundary conditions to circulation models**: Earth system coupling
 </section>

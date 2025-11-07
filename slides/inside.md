@@ -8,9 +8,9 @@
 
 ## Fundamental principles
 
-* Small-amplitude waves over slowly-varying currents and bathymetry
-* Solve for the wave energy probability distribution, not for instantaneous elevation
-* Discretize the spectrum in a number of frequency and direction bins
+1. Small-amplitude waves over slowly-varying currents and bathymetry
+2. Solve for the wave energy PDF, not instantaneous elevation
+3. Discretize the spectrum in frequency-directional space
 </section>
 
 
@@ -33,22 +33,22 @@ currents (Bretherton & Garrett, 1968)
 
 ## Governing equations (cont.)
 
-Dispersion relationship for small-amplitude gravity waves:
+Dispersion relationship for small-amplitude gravity-capillary waves:
 
 $$
-\sigma^2 = gk\tanh(kh)
+\omega^2 = \left(gk + \frac{\sigma k^3}{\rho_w}\right) \tanh(kd)
 $$
 
-Determines how waves of different wavelengths travel at different speeds.
+Determines how different wavelengths travel at different speeds.
 
-Optionally, may include surface tension effects for the gravity-capillary wave regime.
+The capillary term determines the wind speed threshold of wave growth.
 
 </section>
 
 
 <section>
 
-## Wave action balance in spectral space
+## Wave action density balance in spectral space
 
 If wave action is expressed as $\mathcal{N}(\mathbf{x}, k, \theta)$, then
 
@@ -67,7 +67,7 @@ $$
 
 <section>
 
-## Waves not only propagate but also grow, dissipate, and evolve in the wavenumber space
+## Waves also grow, dissipate, and cascade energy to longer scales
 
 $$
 \frac{\partial \mathcal{N}}{\partial t} +

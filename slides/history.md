@@ -125,14 +125,3 @@
 * 2012: UMWM, Donelan $S_{in}$ and $S_{ds}$, and back to a simple, advective $S_{nl}$
 for computational efficiency
 </section>
-
-
-<section>
-
-## What are spectral models useful for in 2025?
-
-1. **Wave forecasting**: Navigation, human safety, coastal and offshore engineering, battlespace environment, recreation and tourism (e.g. surf), etc.
-2. **Wave research**: Better understanding of wave physics and related processes
-3. **Remote sensing**: Interpretation of remote sensing products (satellite, aerial, ground radars etc.)
-4. **Surface boundary conditions to circulation models**: Earth system coupling
-</section>
